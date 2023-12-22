@@ -1,39 +1,43 @@
-# Github-api-service
+# Vmware-api-service
 
 <br>
-This GO service utilises Github API routes 
+This GO service utilises Vmware API routes 
 
 <h2>Routes</h2> 
-<h3><U>Repository Exists</U></h3> 
-Endpoint: /api/repository/exists<br>
+
+<h3><U>Get VM</U></h3> 
+Endpoint:<br>
 Required: 
-<ul><li>repoName: Github-api-service</li> 
-	<li>user: kalem</li></ul>
-Api Route: https://api.github.com/repos/EAS-$user/$repoName<br>
+<ul><li>apiHost: </li> 
+	<li>vmName: </li>
+	<li>vcenterHost: http://vcenter.easlab.co.uk/ </li>
+	<li>vcenterUsername</li> 
+	</li>vcenterPassword</ul>
+Api Route: https://{api_host}/api/vcenter/vm/{vmName}<br>
 <br>
 
-
-<h3><U>Repository Contains File</U></h3> 
-Endpoint: /api/repository/contains<br>
+<h3><U>Get VM Details</U></h3> 
+Endpoint:<br>
 Required: 
-<ul><li>repoName: Github-api-service</li> 
-	<li>user: kalem</li>
-	<li>fileName: README.md</li>
-    </li> </ul>
-Api Route: https://api.github.com/repos/EAS-$user/$repoName/contents<br>
-<br>
+<ul><li>apiHost:</li> 
+	<li> vmName: </li>
+	<li> vcenterHost: http://vcenter.easlab.co.uk/ </li> 
+	<li> vcenterUsername </li> 
+	<li> vcenterPassword: </li></ul>
+Api Route: https://{api_host}/api/vcenter/content/registries/{registry}/health<br>
 
 
-<h3><U>File In Repository Contains</U></h3> 
-Endpoint: /api/repository/file/contains<br>
-Required: 
-<ul><li>repoName: Github-api-service</li> 
-	<li>user: kalem</li>
-	<li>fileName: README.md</li>
-    <li>check: # Github-api-service</li> </ul>
-Api Route: https://api.github.com/repos/EAS-$user/$repoName/contents/$fileName<br>
+
 <br>
-<h2>TODO:</h2>
-<ul><li>Clean code</li> 
-	<li>Utilise models folder as modules</li>
-</ul># Vmware-api-service
+<h2>TODO:</h2><ul><li></li> 
+	<li></li>
+</ul>
+cpu 
+memory 
+os
+ipaddr
+power state
+
+
+
+
